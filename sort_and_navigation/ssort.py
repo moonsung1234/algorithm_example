@@ -22,6 +22,6 @@ def ssort(a) :
 
     return result
 
-a = [3, 4, 1, 2, 5, 8, 6, 9, 0]
+a = [10, 3, 4, 1, 2, 5, 8, 6, 9, 0]
 
 print(ssort(a))
