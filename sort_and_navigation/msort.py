@@ -41,6 +41,6 @@ def msort(a) :
 
     return a
 
-a = [2, 3, 1, 4, 7, 5, 8, 6, 9]
+a = [2, 3, 1, 4, 7, 5, 8, 6, 9, 0]
 
 print(msort(a))
