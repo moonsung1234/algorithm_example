@@ -1,26 +1,19 @@
 
 # 선택 정렬
 
-def findMinIndex(a) :
-    n = len(a)
-    min_index = 0
-
-    for i in range(n) :
-        if a[i] < a[min_index] :
-            min_index = i
-
-    return min_index
-
 def ssort(a) :
-    result = []
+    n = len(a)
 
-    while a :
-        min_index = findMinIndex(a)
-        value = a.pop(min_index)
+    for i in range(n - 1) :
+        min_index = i
+
+        for j in range(i + 1, n) :
+            if a[j] < a[min_index] :
+                min_index = j
         
-        result.append(value)
+        a[i], a[min_index] = a[min_index], a[i]
 
-    return result
+    return a
 
 a = [10, 3, 4, 1, 2, 5, 8, 6, 9, 0]
 
