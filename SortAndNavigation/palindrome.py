@@ -1,5 +1,5 @@
 
-def palindrome(_str) :
+def checkPalindrome(_str) :
     queue = [] # FIFO : First In First Out
     stack = [] # LIFO : Last In First Out
 
@@ -14,7 +14,7 @@ def palindrome(_str) :
 
     return True
 
-print(palindrome("Wow"))
-print(palindrome("HelloWorld!"))
+print(checkPalindrome("Wow"))
+print(checkPalindrome("HelloWorld!"))
 
 
