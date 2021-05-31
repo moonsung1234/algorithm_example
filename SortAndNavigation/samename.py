@@ -18,4 +18,5 @@ def findSameName(a) :
     return result
 
 a = ["Tom", "Jerry", "Tom", "Mike", "Jerry"]
+
 print(findSameName(a))
